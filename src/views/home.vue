@@ -138,27 +138,32 @@ import $ from 'jquery';
 	position: absolute;
 	top: 0;
 	width: 100%;
-	transition: all 0.3s;
+	
 }
 .part1{
 	background: #111;
 	z-index: 1;
+	transition: all 0.5s;
 }
 .part2{
 	background: #333;
 	z-index: 2;
+	transition: all 0.45s;
 }
 .part3{
 	background: #555;
 	z-index: 3;
+	transition: all 0.4s;
 }
 .part4{
 	background: #777;
 	z-index: 4;
+	transition: all 0.35s;
 }
 .part5{
 	background: #999;
 	z-index: 5;
+	transition: all 0.3s;
 }
 .part-title{
 	height: 100%;
