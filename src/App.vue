@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <!--y页面加载loadinga-->
+    <!--y页面加载loading-->
     <transition name="fade">
       <div class="loading" v-if="loading">
         <pacman-loader :loading="loading" :color="color" :size="size"></pacman-loader>
