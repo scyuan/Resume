@@ -135,7 +135,7 @@
 
       </div>
       <div class="content1 content2">
-        <div class="project-box"><img src="../assets/Snip20180701_1.png" alt="">
+        <div class="project-box"><img src="../assets/04d878d02e20733674f477ae6e7d9c4d.jpg" alt="">
           <div class="pro-mengban"></div>
           <span class="border border-t"></span>
           <span class="border border-r"></span>
@@ -146,7 +146,7 @@
             <p>文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
           </div>
         </div>
-        <div class="project-box"><img src="../assets/Snip20180701_1.png" alt="">
+        <div class="project-box"><img src="../assets/04d878d02e20733674f477ae6e7d9c4d.jpg" alt="">
           <div class="pro-mengban"></div>
           <span class="border border-t"></span>
           <span class="border border-r"></span>
@@ -157,7 +157,7 @@
             <p>文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
           </div>
         </div>
-        <div class="project-box"><img src="../assets/Snip20180701_1.png" alt="">
+        <div class="project-box"><img src="../assets/04d878d02e20733674f477ae6e7d9c4d.jpg" alt="">
           <div class="pro-mengban"></div>
           <span class="border border-t"></span>
           <span class="border border-r"></span>
@@ -168,7 +168,7 @@
             <p>文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
           </div>
         </div>
-        <div class="project-box"><img src="../assets/Snip20180701_1.png" alt="">
+        <div class="project-box"><img src="../assets/04d878d02e20733674f477ae6e7d9c4d.jpg" alt="">
           <div class="pro-mengban"></div>
           <span class="border border-t"></span>
           <span class="border border-r"></span>
@@ -179,7 +179,7 @@
             <p>文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
           </div>
         </div>
-        <div class="project-box"><img src="../assets/Snip20180701_1.png" alt="">
+        <div class="project-box"><img src="../assets/04d878d02e20733674f477ae6e7d9c4d.jpg" alt="">
           <div class="pro-mengban"></div>
           <span class="border border-t"></span>
           <span class="border border-r"></span>
@@ -190,7 +190,7 @@
             <p>文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字1</p>
           </div>
         </div>
-        <div class="project-box"><img src="../assets/Snip20180701_1.png" alt="">
+        <div class="project-box"><img src="../assets/04d878d02e20733674f477ae6e7d9c4d.jpg" alt="">
           <div class="pro-mengban"></div>
           <span class="border border-t"></span>
           <span class="border border-r"></span>
