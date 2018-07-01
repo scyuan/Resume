@@ -52,11 +52,11 @@ body,#app{
 }
 @font-face {
   font-family: 'iconfont';  /* project id 601201 */
-  src: url('//at.alicdn.com/t/font_601201_r385j77szy.eot');
-  src: url('//at.alicdn.com/t/font_601201_r385j77szy.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_601201_r385j77szy.woff') format('woff'),
-  url('//at.alicdn.com/t/font_601201_r385j77szy.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_601201_r385j77szy.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_601201_blg3qtc04z9.eot');
+  src: url('//at.alicdn.com/t/font_601201_blg3qtc04z9.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_601201_blg3qtc04z9.woff') format('woff'),
+  url('//at.alicdn.com/t/font_601201_blg3qtc04z9.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_601201_blg3qtc04z9.svg#iconfont') format('svg');
 }
 .icon{
   font-family: 'iconfont';
@@ -88,5 +88,12 @@ body,#app{
 }
 .fade-enter-avtive,.fade-leave-active{
   transition: all 0.3s;
+}
+.clearfix::after{
+  content: '';
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
 }
 </style>
