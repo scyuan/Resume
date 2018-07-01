@@ -52,11 +52,11 @@ body,#app{
 }
 @font-face {
   font-family: 'iconfont';  /* project id 601201 */
-  src: url('//at.alicdn.com/t/font_601201_blg3qtc04z9.eot');
-  src: url('//at.alicdn.com/t/font_601201_blg3qtc04z9.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_601201_blg3qtc04z9.woff') format('woff'),
-  url('//at.alicdn.com/t/font_601201_blg3qtc04z9.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_601201_blg3qtc04z9.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_601201_3nz8zjo2gry.eot');
+  src: url('//at.alicdn.com/t/font_601201_3nz8zjo2gry.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_601201_3nz8zjo2gry.woff') format('woff'),
+  url('//at.alicdn.com/t/font_601201_3nz8zjo2gry.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_601201_3nz8zjo2gry.svg#iconfont') format('svg');
 }
 .icon{
   font-family: 'iconfont';

@@ -10,10 +10,13 @@
           <span>页</span>
         </p>
       </div>
+      <p class="moto">时光易逝</p>
+      <canvas id="canvas" :width="home_width" :height="canvas_heigth"></canvas>
+      <div class="content1">
 
-      <canvas id="canvas" :width="home_width" :height="home_height"></canvas>
-      <div class="content" :style='{paddingLeft:part_width+"px"}'>
-        <p class="center">首页目前没什么东西啦，不过你能来到这个地方，那就是缘分☺️</p>
+        <p class="center">首页没什么东西啦，不过你能来到这个地方，那就是缘分☺️</p>
+        <p class="center">目前是1.0版本，以后会慢慢改进</p>
+        <p class="center">|</p>
       </div>
 
       <i class="icon icon-back" @click.stop='back($event)'>&#xe62c;</i>
@@ -29,7 +32,7 @@
 
       </div>
 
-      <div class="content" :style='{paddingLeft:part_width+"px"}' style="padding-right: 250px">
+      <div class="content1">
         <div class="base-info clearfix">
           <div class="avator">
             <img src="../assets/IMG_0606.jpg" alt="">
@@ -214,6 +217,22 @@
         </p>
 
       </div>
+      <div class="content1">
+        <!-- github  email  blog  weibo-->
+        <div class="o-item" @click="go('https://github.com/scyuan')">
+          <i class="icon">&#xeaf6;</i><span>github</span>
+        </div>
+        <div class="o-item" @click="go('http://www.yuansichao.com')">
+          <i class="icon">&#xe604;</i><span>一枚程序员</span>
+        </div>
+        <div class="o-item" @click="go('https://weibo.com/YscLidost/profile?rightmod=1&wvr=6&mod=personinfo')">
+          <i class="icon">&#xe65a;</i><span>程序袁袁袁袁</span>
+        </div>
+        <div class="o-item" @click="go('mailto:644397334@qq.com')">
+          <i class="icon">&#xe605;</i><span>QQ邮箱</span>
+        </div>
+
+      </div>
       <i class="icon icon-back" @click.stop='back($event)'>&#xe62c;</i>
     </div>
   </div>
@@ -230,6 +249,7 @@ import $ from 'jquery';
         home_width:0,
         part_width:0,
         canvas_width:0,
+        canvas_heigth:0,
 
       }
     },
@@ -278,6 +298,9 @@ import $ from 'jquery';
           })
         }
         $('.part').on('click',this,_this.bindClick);
+      },
+      go:function (path) {
+        window.location.href = path;
       }
     },
     created:function(){
@@ -287,6 +310,7 @@ import $ from 'jquery';
       this.canvas_width = width - width/5;
       this.home_width = width;
       this.part_width = width/5;
+      this.canvas_heigth = height/3;
     },
 
     mounted:function(){
@@ -453,8 +477,8 @@ import $ from 'jquery';
                 if(curr_arr[ii][j] == 1){
 
                   var ball = {
-                    offsetX:(j+1+i*3)*11+i*25+_this.home_width/2-200,                                  // 小球x轴偏移量
-                    offsetY:(ii+1)*10+_this.home_height/2,                                          // 小球y轴偏移量
+                    offsetX:(j+1+i*3)*11+i*25+_this.home_width/2-230,                                  // 小球x轴偏移量
+                    offsetY:(ii+1)*10,                                          // 小球y轴偏移量
                     r:5,                                                       // 小球半径
                     g:0.06+Math.random()*0.06,                                  // 类似于引力，小球初始向上运动，并速度回慢慢减小，减小到0时，方向向下运动。该参数很重要，可以产生一个boom的效果，并且小球触底之后需要一个弹上弹下的效果。
                     fillStyle:color[Math.floor(Math.random()*8)],               // 绘制小球的颜色
@@ -633,7 +657,7 @@ import $ from 'jquery';
               // 绘制实心圆
               ctx.beginPath();
               ctx.fillStyle = '#fff';
-              ctx.arc((j+1+k*3)*11+25*k+_this.home_width/2-200,(i+1)*10+_this.home_height/2,5,0,360,false);
+              ctx.arc((j+1+k*3)*11+25*k+_this.home_width/2-230,(i+1)*10,5,0,360,false);
               ctx.fill();
               // 绘制结束
 
@@ -718,6 +742,29 @@ import $ from 'jquery';
   width: 100%;
   top: 50%;
   transform: translateY(-50%);
+  cursor: pointer;
+  background: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.title-p:hover{
+  background: linear-gradient(rgba(255,255,255,1),rgba(255,255,255,0.3));
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.title-p:hover:after{
+  background: linear-gradient(rgba(255,255,255,1),rgba(255,255,255,0.3));
+}
+.title-p:after{
+  content: '';
+  display: block;
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  top: 0;
+  right: 30%;
+  background: #fff;
 }
 .title-p span{
   display: block;
@@ -735,8 +782,9 @@ import $ from 'jquery';
 #canvas{
   position: fixed;
   z-index: 100;
-  top: 50%;
-  transform: translateY(-50%);
+  width: 100%;
+  left: 0;
+  bottom: 0;
 }
 .content{
   height: 100%;
@@ -773,7 +821,7 @@ import $ from 'jquery';
   line-height: 84px;
   padding-left: 15px;
   font-size: 20px;
-
+  color: #fff;
 }
 .base-info p>span{
   margin-right: 30px;
@@ -810,7 +858,8 @@ import $ from 'jquery';
   transform: scale(20);
 }
 .center{
-  padding-left: 20%;
+  text-align: center;
+  color: #fff;
 }
 .card-info-wenzi{
   position: relative;
@@ -975,4 +1024,37 @@ import $ from 'jquery';
   box-sizing: border-box;
   text-align: center;
 }
+.o-item{
+  width: 25%;
+  height: 60px;
+  background: #fff;
+  float: left;
+  border: 5px solid hsla(0,0%,90%,0);
+  box-sizing: border-box;
+  margin-top: 30px;
+  background-clip: padding-box;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+}
+.o-item .icon{
+  font-size: 30px;
+}
+.o-item span{
+  vertical-align: top;
+  margin-left: 10px;
+}
+.moto{
+  width: 100%;
+  position: fixed;
+  z-index:2;
+  color: #fff;
+  font-size: 40px;
+
+  left: 0;
+  bottom: 33.33%;
+  text-align: center;
+
+}
+
 </style>
