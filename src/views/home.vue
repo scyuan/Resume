@@ -16,7 +16,7 @@
 
         <p class="center">首页没什么东西啦，不过你能来到这个地方，那就是缘分☺️</p>
         <p class="center">目前是1.0版本，以后会慢慢改进</p>
-        <p class="center">|</p>
+        <p class="center">v1.0</p>
       </div>
 
       <i class="icon icon-back" @click.stop='back($event)'>&#xe62c;</i>
@@ -815,6 +815,9 @@ import $ from 'jquery';
   width: 100%;
   height: auto;
 }
+.base-info{
+  height: 30%;
+}
 .base-info p{
   display: inline-block;
   float: left;
@@ -827,8 +830,7 @@ import $ from 'jquery';
   margin-right: 30px;
 }
 .card-box{
-  height: 400px;
-  margin-top: 30px;
+  height: 70%;
 }
 .card-box > div{
   width: 25%;
@@ -836,6 +838,7 @@ import $ from 'jquery';
   height: 100%;
   box-sizing: border-box;
   padding: 0 10px;
+  transform: translateZ(0) !important;
 }
 .card-info{
   border-radius: 5px;
@@ -843,6 +846,7 @@ import $ from 'jquery';
   height: 100%;
   overflow: hidden;
   position: relative;
+  box-sizing: border-box;
 }
 .card-info-white-card{
   width: 60px;
@@ -855,7 +859,7 @@ import $ from 'jquery';
   transition: all 0.3s;
 }
 .card-info:hover .card-info-white-card{
-  transform: scale(20);
+  transform: scale(20) translateZ(0);
 }
 .center{
   text-align: center;
