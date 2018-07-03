@@ -1033,7 +1033,7 @@ import $ from 'jquery';
   height: 60px;
   background: #fff;
   float: left;
-  border: 5px solid hsla(0,0%,90%,0);
+  border: 5px solid hsla(0,0%,0%,0);
   box-sizing: border-box;
   margin-top: 30px;
   background-clip: padding-box;
