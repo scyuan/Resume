@@ -128,7 +128,10 @@ new Rem();
 				this.currIndex = 9999;
 				$('.part-title').removeClass('part-title-1');
 				this.reBack();
-			}
+			},
+			go:function (path) {
+		        window.location.href = path;
+		      }
 		},
 		created(){
 			
