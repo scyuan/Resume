@@ -14,7 +14,7 @@
       <canvas id="canvas" :width="home_width" :height="canvas_heigth"></canvas>
       <div class="content1">
 
-        <p class="center">首页没什么东西啦，不过你能来到这个地方，那就是缘分☺️</p>
+        <p class="center">首页没什么东西啦，不过你能来到这个地方，那就是缘分😍</p>
         <p class="center">目前是1.0版本，以后会慢慢改进</p>
         <p class="center">v1.0</p>
       </div>
