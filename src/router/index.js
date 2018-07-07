@@ -5,12 +5,15 @@ import mhome from '@/views/m/home'
 
 Vue.use(Router)
 
-export default new Router({
+const router =  new Router({
   routes: [
     {
       path: '/',
       name: 'home',
-      component: home
+      component: home,
+      beforeEnter: (to, from, next) => {
+        next('/m/');
+      }
     },
     {
       path: '/m/',
@@ -19,3 +22,16 @@ export default new Router({
     }
   ]
 })
+
+// router.beforeEach((to, from, next) => {
+  
+//   var isPhone = /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)? true:false;
+//   if(isPhone){
+   
+//     next({path:"/m"});
+//   }else{
+//     next({path:"/"});
+//   }
+// })
+
+export default router;
