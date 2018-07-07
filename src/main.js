@@ -11,5 +11,13 @@ new Vue({
   el: '#app',
   router,
   components: { App },
-  template: '<App/>'
+  template: '<App/>',
+  created:function(){
+    var isPhone = /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)? true:false;
+    if(isPhone){
+      this.$router.push("/m/")
+    }else{
+      this.$router.push("/")
+    }
+  }
 })
