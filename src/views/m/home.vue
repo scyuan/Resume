@@ -134,11 +134,11 @@ new Rem();
 		      }
 		},
 		created(){
-			
+
 		}
 	}
 </script>
-<style>
+<style scoped>
 .mhome{
 	width: 100%;
 	height: 100%;
