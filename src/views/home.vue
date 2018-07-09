@@ -529,7 +529,7 @@ import CanvasTime from '@/util/CanvasTime';
   position: relative;
   padding: 10px;
   box-sizing: border-box;
-  overflow: scroll;
+  overflow: hidden;
   z-index: 10;
 }
 .card-info-wenzi>p{
@@ -567,8 +567,9 @@ import CanvasTime from '@/util/CanvasTime';
 .line>span{
   line-height: 30px;
   color: #fff;
-  font-size: 36px;
+  font-size: 32px;
   font-weight: bolder;
+  display: inherit;
 }
 .animate-line{
   position: absolute;
@@ -688,6 +689,15 @@ import CanvasTime from '@/util/CanvasTime';
   box-sizing: border-box;
   text-align: center;
 }
+.pro-wenzi h1{
+  font-size: 20px;
+}
+.pro-wenzi p{
+  font-size: 16px;
+}
+.card-info-wenzi p{
+  font-size: 16px;
+}
 .o-item{
   width: 25%;
   height: 60px;
@@ -703,10 +713,12 @@ import CanvasTime from '@/util/CanvasTime';
 }
 .o-item .icon{
   font-size: 30px;
+  vertical-align: top;
 }
 .o-item span{
   vertical-align: top;
   margin-left: 10px;
+  font-size: 16px;
 }
 .moto{
   width: 100%;

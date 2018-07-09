@@ -72,7 +72,7 @@
 		        <div class="o-item" @click="go('http://www.yuansichao.com')">
 		          <i class="icon">&#xe604;</i><span>一枚程序员</span>
 		        </div>
-		        <div class="o-item" @click="go('https://weibo.com/YscLidost/profile?rightmod=1&wvr=6&mod=personinfo')">
+		        <div class="o-item" @click="go('https://m.weibo.cn/u/5094904210')">
 		          <i class="icon">&#xe65a;</i><span>程序袁袁袁袁</span>
 		        </div>
 		        <div class="o-item" @click="go('mailto:644397334@qq.com')">
