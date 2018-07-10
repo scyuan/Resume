@@ -13,10 +13,17 @@
       <p class="moto">时光易逝</p>
       <canvas id="canvas" :width="home_width" :height="canvas_heigth"></canvas>
       <div class="content1">
-
-        <p class="center">首页没什么东西啦，不过你能来到这个地方，那就是缘分😍</p>
-        <p class="center">目前是1.0版本，以后会慢慢改进</p>
-        <p class="center">v1.0</p>
+        <div class="left">
+          <div class="avator">
+            <div class="avator_img"></div>
+            <p>风的尽头是孤独</p>
+          </div>
+        </div>
+        <div class="right">
+          <p class="center">首页没什么东西啦，不过你能来到这个地方，那就是缘分😍</p>
+          <p class="center">目前是1.0版本，以后会慢慢改进</p>
+          <p class="center">v1.0</p>
+        </div>
       </div>
 
       <i class="icon icon-back" @click.stop='back(0)'>&#xe62c;</i>
@@ -35,43 +42,56 @@
       <div class="content1">
         <div class="base-info clearfix">
 
-          <p><span>sichao.yuan</span><span>男</span><span>95年老腊肉</span><span>毕业于：重庆大学/本科/计算机科学技术</span></p>
+          <p><span>袁斯超</span><span>男</span><span>95年老腊肉</span><span>毕业于：重庆大学/全日制本科/计算机科学技术</span></p>
         </div>
         <div class="card-box clearfix">
           <div class="card">
             <div class="card-info">
 
-
+              <h2>基本情况</h2>
+              <p>介绍一些个人基本情况</p>
               <div class="card-info-wenzi">
-                <p>文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
-                <p>文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
-                <p>文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
-                <p>文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
-
+                <h3>基本情况</h3>
+                <p>2017年7月毕业于重庆大学。来到上海从事前端的工作，目前工作一年。熟悉页面开发html、css、JavaScript等前端基础。喜欢开源，自己也朝着这方向努力，熟悉vue，有过基于vue的产品开发经验。<b>热爱前端</b>，喜欢去倒弄一些小东西，经常更新github。</p>
+                <h3>工作职责</h3>
+                <p>参与项目用vue重构</p>
+                <p>商城开发和维护</p>
+                <p>内部系统（移动OA，JQuery+HTML）</p>
+                <p>微信小程序（斐讯销售管理系统）</p>
+                <p>其他一些项目的维护（优化和bug修复）和开发任务</p>
               </div>
             </div>
           </div>
           <div class="card">
             <div class="card-info">
-
+              <h2>常逛</h2>
+              <p>经常逛的一些网站</p>
               <div class="card-info-wenzi">
-                <p>文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
-                <p>文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
-                <p>文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
-                <p>文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
-
+                <h3>GitHub</h3>
+                <p>分享一些自己的小作品以及学习他人的优秀代码和开源项目</p>
+                <h3>Dash</h3>
+                <p>一款MAC平台上的文档工具（文档官方、丰富）</p>
+                <h3>Segmentfault</h3>
+                <p>搜索解决一些疑问 探索新奇</p>
+                <h3>掘金</h3>
+                <p>搜索解决一些疑问 探索新奇</p>
+                <h3>等待我去探索更多...</h3>
               </div>
             </div>
           </div>
           <div class="card">
             <div class="card-info">
-
+              <h2>爱好</h2>
+              <p>业余的一些爱好</p>
               <div class="card-info-wenzi">
-                <p>文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
-                <p>文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
-                <p>文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
-                <p>文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
-
+                <h3>运动</h3>
+                <p>5km跑、羽毛球...</p>
+                <h3>音乐电影</h3>
+                <p>周杰伦、王力宏、各类喜剧电影</p>
+                <h3>游戏</h3>
+                <p>英雄联盟、地下城与勇士、各类优质单机独立游戏、模拟类游戏</p>
+                <h3>烹饪</h3>
+                <p>做菜算吗？😂，家常小菜还是hold住的</p>
               </div>
             </div>
           </div>
@@ -98,7 +118,7 @@
         <div class="skill">
           <i class="icon icon-skill">&#xe6b7;</i>
           <div class="line" style="width: 75%"><span>CSS 75%</span><div class="animate-line"></div></div>
-          
+
         </div>
         <div class="skill">
           <i class="icon icon-skill">&#xe640;</i>
@@ -126,7 +146,7 @@
 
       </div>
       <div class="content1 content2">
-        <div class="project-box"><img src="../assets/04d878d02e20733674f477ae6e7d9c4d.jpg" alt="">
+        <div class="project-box" @click="go('https://www.phimall.com/m/')"><img src="../assets/04d878d02e20733674f477ae6e7d9c4d.jpg" alt="">
           <div class="pro-mengban"></div>
           <span class="border border-t"></span>
           <span class="border border-r"></span>
@@ -134,10 +154,10 @@
           <span class="border border-l"></span>
           <div class="pro-wenzi">
             <h1>斐讯商城(H5)</h1>
-            <p>文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+            <p>基于Vue开发。斐讯官方商城H5版适用于微信端、浏览器、APP端。主要满足用户对斐讯产品的购买。</p>
           </div>
         </div>
-        <div class="project-box"><img src="../assets/04d878d02e20733674f477ae6e7d9c4d.jpg" alt="">
+        <div class="project-box" @click="go('https://www.phimall.com/m/integralstatic-integralHome.html')"><img src="../assets/04d878d02e20733674f477ae6e7d9c4d.jpg" alt="">
           <div class="pro-mengban"></div>
           <span class="border border-t"></span>
           <span class="border border-r"></span>
@@ -145,7 +165,7 @@
           <span class="border border-l"></span>
           <div class="pro-wenzi">
             <h1>积分商城(H5)</h1>
-            <p>文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+            <p>基于Vue开发。积分商城也是适用于微信端、浏览器、APP端。主要功能为首页活动、商品详情、购买（纯积分+积分加价购）、积分管理。</p>
           </div>
         </div>
         <div class="project-box"><img src="../assets/04d878d02e20733674f477ae6e7d9c4d.jpg" alt="">
@@ -156,7 +176,7 @@
           <span class="border border-l"></span>
           <div class="pro-wenzi">
             <h1>微信办公-移动OA(H5)</h1>
-            <p>文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+            <p>为方便经常在外办公员工，将PC端常用功能移植到微信web端，基于JQuery开发。</p>
           </div>
         </div>
         <div class="project-box"><img src="../assets/04d878d02e20733674f477ae6e7d9c4d.jpg" alt="">
@@ -166,11 +186,11 @@
           <span class="border border-b"></span>
           <span class="border border-l"></span>
           <div class="pro-wenzi">
-            <h1>微信小程序(销售管理)</h1>
-            <p>文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字1</p>
+            <h1>微信小程序(销售)</h1>
+            <p>方便销售员销售公司产品，主要满足销售员扫码销售以及对产品销售的统计功能。</p>
           </div>
         </div>
-        <div class="project-box"><img src="../assets/04d878d02e20733674f477ae6e7d9c4d.jpg" alt="">
+        <div class="project-box" @click="go('http://www.yuansichao.xin/vue-music/dist/#/')"><img src="../assets/04d878d02e20733674f477ae6e7d9c4d.jpg" alt="">
           <div class="pro-mengban"></div>
           <span class="border border-t"></span>
           <span class="border border-r"></span>
@@ -178,10 +198,10 @@
           <span class="border border-l"></span>
           <div class="pro-wenzi">
             <h1>Vue仿网易云音乐</h1>
-            <p>文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+            <p>个人项目，热爱音乐，所以想用Vue写个WebApp，只适配移动端。实现首页功能包括歌单推荐和歌曲推荐、歌单详情、歌曲播放、歌曲歌词播放和进度条、MV等功能</p>
           </div>
         </div>
-        <div class="project-box"><img src="../assets/04d878d02e20733674f477ae6e7d9c4d.jpg" alt="">
+        <div class="project-box" @click="go('http://www.yuansichao.xin/dist/#/')"><img src="../assets/04d878d02e20733674f477ae6e7d9c4d.jpg" alt="">
           <div class="pro-mengban"></div>
           <span class="border border-t"></span>
           <span class="border border-r"></span>
@@ -189,12 +209,9 @@
           <span class="border border-l"></span>
           <div class="pro-wenzi">
             <h1>Vue仿小米商城</h1>
-            <p>文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+            <p>整体布局仿照小米移动商城，通过rem+px实现移动端的适配，基于vue全家桶（vue+vuex+vue-router）完成首页、购物车、分类、产品详情等功能。</p>
           </div>
         </div>
-
-
-
       </div>
       <i class="icon icon-back" @click.stop='back(3)'>&#xe62c;</i>
     </div>
@@ -452,18 +469,45 @@ import CanvasTime from '@/util/CanvasTime';
   border: 1px solid #fff;
   color: #fff;
 }
-.avator{
-  width: 80px;
-  height: 80px;
-  overflow: hidden;
-  border-radius: 40px;
-  border: 2px solid #fff;
-  display: inline-block;
+.left,.right{
   float: left;
+  height: 100%;
+  padding-top: 5%;
 }
-.avator img{
-  width: 100%;
-  height: auto;
+.left{
+  width: 30%;
+  position: relative;
+}
+.left::after{
+  content: '';
+  display: block;
+  width: 2px;
+  height: 40%;
+  background: #fff;
+  top: 5%;
+  position: absolute;
+  right: 0;
+}
+.right{
+  width: 70%;
+}
+.avator{
+  width: 180px;
+  height: 180px;
+  display: inline-block;
+  text-align: center;
+}
+.avator p{
+  font-size: 18px;
+  color: #fff;
+}
+.avator_img{
+  width: 140px;
+  height: 140px;
+  display: inline-block;
+  border-radius: 70px;
+  background: url("../assets/IMG_0606.jpg") no-repeat;
+  background-size: 100% auto;
 }
 .base-info{
   height: 20%;
@@ -496,6 +540,27 @@ import CanvasTime from '@/util/CanvasTime';
   overflow: hidden;
   position: relative;
   box-sizing: border-box;
+  padding-top: 45%;
+  padding-left: 20%;
+}
+.card-info>h2{
+  font-size: 28px;
+  color: #fff;
+  position: relative;
+}
+.card-info>h2:before{
+  content: '';
+  height: 50%;
+  display: block;
+  width: 3px;
+  position: absolute;
+  left: -10px;
+  top: 7px;
+  background: #fff;
+}
+.card-info>p{
+  font-size: 16px;
+  color: #f1f1f1;
 }
 .card-info-white-card{
   width: 60px;
@@ -516,26 +581,30 @@ import CanvasTime from '@/util/CanvasTime';
   color: #fff;
 }
 .card-info:hover .card-info-wenzi{
-  margin-top: 0;
+  top: 0;
 }
 .card-info-wenzi{
-  position: relative;
+  position: absolute;
+  overflow: auto;
+  width: 100%;
+  left: 0;
   padding: 10px;
   box-sizing: border-box;
-  overflow: hidden;
   z-index: 10;
   height: 100%;
   background: #fff;
-  margin-top: 164%;
+  top: 164%;
   transition: all 0.3s;
 }
+.card-info-wenzi::-webkit-scrollbar {display:none}
+
 .card-info-wenzi>p{
-  margin-bottom: 15px;
   color: #333;
-  display: none;
+
 }
-.card-info:hover .card-info-wenzi>p{
-  display: block;
+.card-info-wenzi>h3{
+  font-size: 18px;
+  margin-top: 10px;
 }
 .content1{
   width: 60%;
@@ -722,12 +791,9 @@ import CanvasTime from '@/util/CanvasTime';
   position: fixed;
   z-index:2;
   color: #fff;
-  font-size: 40px;
-
+  font-size: 20px;
   left: 0;
   bottom: 33.33%;
   text-align: center;
-
 }
-
 </style>
