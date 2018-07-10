@@ -93,23 +93,24 @@
       <div class="content1">
         <div class="skill">
           <i class="icon icon-skill">&#xe622;</i>
-          <div class="line" style="width: 55%"><span>HTML</span><div class="animate-line"></div></div>
+          <div class="line" style="width: 75%"><span>HTML 75%</span><div class="animate-line"></div></div>
         </div>
         <div class="skill">
           <i class="icon icon-skill">&#xe6b7;</i>
-          <div class="line" style="width: 55%"><span>CSS</span><div class="animate-line"></div></div>
+          <div class="line" style="width: 75%"><span>CSS 75%</span><div class="animate-line"></div></div>
+          
         </div>
         <div class="skill">
           <i class="icon icon-skill">&#xe640;</i>
-          <div class="line" style="width: 65%"><span>VueJS</span><div class="animate-line"></div></div>
+          <div class="line" style="width: 65%"><span>VueJS 65%</span><div class="animate-line"></div></div>
         </div>
         <div class="skill">
           <i class="icon icon-skill">&#xe639;</i>
-          <div class="line" style="width: 45%"><span>JavaScript</span><div class="animate-line"></div></div>
+          <div class="line" style="width: 45%"><span>JavaScript 45%</span><div class="animate-line"></div></div>
         </div>
         <div class="skill">
           <i class="icon icon-skill">&#xe655;</i>
-          <div class="line" style="width: 45%"><span>JQuery</span><div class="animate-line"></div></div>
+          <div class="line" style="width: 45%"><span>JQuery 45%</span><div class="animate-line"></div></div>
         </div>
       </div>
       <i class="icon icon-back" @click.stop='back(2)'>&#xe62c;</i>
@@ -165,19 +166,8 @@
           <span class="border border-b"></span>
           <span class="border border-l"></span>
           <div class="pro-wenzi">
-            <h1>微信小程序</h1>
+            <h1>微信小程序(销售管理)</h1>
             <p>文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字1</p>
-          </div>
-        </div>
-        <div class="project-box"><img src="../assets/04d878d02e20733674f477ae6e7d9c4d.jpg" alt="">
-          <div class="pro-mengban"></div>
-          <span class="border border-t"></span>
-          <span class="border border-r"></span>
-          <span class="border border-b"></span>
-          <span class="border border-l"></span>
-          <div class="pro-wenzi">
-            <h1>慕课网</h1>
-            <p>文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
           </div>
         </div>
         <div class="project-box"><img src="../assets/04d878d02e20733674f477ae6e7d9c4d.jpg" alt="">
@@ -202,6 +192,7 @@
             <p>文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
           </div>
         </div>
+
 
 
       </div>
