@@ -34,16 +34,14 @@
 
       <div class="content1">
         <div class="base-info clearfix">
-          <div class="avator">
-            <img src="../assets/IMG_0606.jpg" alt="">
-          </div>
+
           <p><span>sichao.yuan</span><span>男</span><span>95年老腊肉</span><span>毕业于：重庆大学/本科/计算机科学技术</span></p>
         </div>
-        <div class="card-box">
+        <div class="card-box clearfix">
           <div class="card">
             <div class="card-info">
 
-              <div class="card-info-white-card"></div>
+
               <div class="card-info-wenzi">
                 <p>文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
                 <p>文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
@@ -55,7 +53,7 @@
           </div>
           <div class="card">
             <div class="card-info">
-              <div class="card-info-white-card"></div>
+
               <div class="card-info-wenzi">
                 <p>文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
                 <p>文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
@@ -67,7 +65,7 @@
           </div>
           <div class="card">
             <div class="card-info">
-              <div class="card-info-white-card"></div>
+
               <div class="card-info-wenzi">
                 <p>文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
                 <p>文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
@@ -77,18 +75,7 @@
               </div>
             </div>
           </div>
-          <div class="card">
-            <div class="card-info">
-              <div class="card-info-white-card"></div>
-              <div class="card-info-wenzi">
-                <p>文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
-                <p>文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
-                <p>文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
-                <p>文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
 
-              </div>
-            </div>
-          </div>
         </div>
       </div>
       <i class="icon icon-back" @click.stop='back(1)'>&#xe62c;</i>
@@ -145,6 +132,50 @@
           <span class="border border-b"></span>
           <span class="border border-l"></span>
           <div class="pro-wenzi">
+            <h1>斐讯商城(H5)</h1>
+            <p>文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+          </div>
+        </div>
+        <div class="project-box"><img src="../assets/04d878d02e20733674f477ae6e7d9c4d.jpg" alt="">
+          <div class="pro-mengban"></div>
+          <span class="border border-t"></span>
+          <span class="border border-r"></span>
+          <span class="border border-b"></span>
+          <span class="border border-l"></span>
+          <div class="pro-wenzi">
+            <h1>积分商城(H5)</h1>
+            <p>文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+          </div>
+        </div>
+        <div class="project-box"><img src="../assets/04d878d02e20733674f477ae6e7d9c4d.jpg" alt="">
+          <div class="pro-mengban"></div>
+          <span class="border border-t"></span>
+          <span class="border border-r"></span>
+          <span class="border border-b"></span>
+          <span class="border border-l"></span>
+          <div class="pro-wenzi">
+            <h1>微信办公-移动OA(H5)</h1>
+            <p>文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+          </div>
+        </div>
+        <div class="project-box"><img src="../assets/04d878d02e20733674f477ae6e7d9c4d.jpg" alt="">
+          <div class="pro-mengban"></div>
+          <span class="border border-t"></span>
+          <span class="border border-r"></span>
+          <span class="border border-b"></span>
+          <span class="border border-l"></span>
+          <div class="pro-wenzi">
+            <h1>微信小程序</h1>
+            <p>文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字1</p>
+          </div>
+        </div>
+        <div class="project-box"><img src="../assets/04d878d02e20733674f477ae6e7d9c4d.jpg" alt="">
+          <div class="pro-mengban"></div>
+          <span class="border border-t"></span>
+          <span class="border border-r"></span>
+          <span class="border border-b"></span>
+          <span class="border border-l"></span>
+          <div class="pro-wenzi">
             <h1>慕课网</h1>
             <p>文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
           </div>
@@ -171,39 +202,8 @@
             <p>文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
           </div>
         </div>
-        <div class="project-box"><img src="../assets/04d878d02e20733674f477ae6e7d9c4d.jpg" alt="">
-          <div class="pro-mengban"></div>
-          <span class="border border-t"></span>
-          <span class="border border-r"></span>
-          <span class="border border-b"></span>
-          <span class="border border-l"></span>
-          <div class="pro-wenzi">
-            <h1>微信办公-移动OA</h1>
-            <p>文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
-          </div>
-        </div>
-        <div class="project-box"><img src="../assets/04d878d02e20733674f477ae6e7d9c4d.jpg" alt="">
-          <div class="pro-mengban"></div>
-          <span class="border border-t"></span>
-          <span class="border border-r"></span>
-          <span class="border border-b"></span>
-          <span class="border border-l"></span>
-          <div class="pro-wenzi">
-            <h1>微信小程序</h1>
-            <p>文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字1</p>
-          </div>
-        </div>
-        <div class="project-box"><img src="../assets/04d878d02e20733674f477ae6e7d9c4d.jpg" alt="">
-          <div class="pro-mengban"></div>
-          <span class="border border-t"></span>
-          <span class="border border-r"></span>
-          <span class="border border-b"></span>
-          <span class="border border-l"></span>
-          <div class="pro-wenzi">
-            <h1>斐讯商城</h1>
-            <p>文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
-          </div>
-        </div>
+
+
       </div>
       <i class="icon icon-back" @click.stop='back(3)'>&#xe62c;</i>
     </div>
@@ -475,7 +475,7 @@ import CanvasTime from '@/util/CanvasTime';
   height: auto;
 }
 .base-info{
-  height: 30%;
+  height: 20%;
 }
 .base-info p{
   display: inline-block;
@@ -492,15 +492,14 @@ import CanvasTime from '@/util/CanvasTime';
   height: 70%;
 }
 .card-box > div{
-  width: 25%;
+  width: 33.3333%;
   float: left;
   height: 100%;
   box-sizing: border-box;
-  padding: 0 10px;
+  padding: 0 2px;
   transform: translateZ(0) !important;
 }
 .card-info{
-  border-radius: 5px;
   border: 1px solid #fff;
   height: 100%;
   overflow: hidden;
@@ -525,12 +524,19 @@ import CanvasTime from '@/util/CanvasTime';
   font-size: 16px;
   color: #fff;
 }
+.card-info:hover .card-info-wenzi{
+  margin-top: 0;
+}
 .card-info-wenzi{
   position: relative;
   padding: 10px;
   box-sizing: border-box;
   overflow: hidden;
   z-index: 10;
+  height: 100%;
+  background: #fff;
+  margin-top: 164%;
+  transition: all 0.3s;
 }
 .card-info-wenzi>p{
   margin-bottom: 15px;
@@ -542,7 +548,7 @@ import CanvasTime from '@/util/CanvasTime';
 }
 .content1{
   width: 60%;
-  height: 60%;
+  height: 80%;
   position: absolute;
   left: 50%;
   top: 50%;
