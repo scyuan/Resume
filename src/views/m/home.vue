@@ -97,6 +97,26 @@
 				<i class="icon icon-go-top" v-show='currIndex == 3' @click='gotop(3)'>&#xe647;</i>
 				<span @click='open(3)'>项目</span>
 			</div>
+      <div class="content nopadding scroll" :style="{'bottom':height/5+'px'}">
+        <div class="project-card odd" @click="project(0)">
+          <p>project1</p>
+        </div>
+        <div class="project-card even" @click="project(1)">
+          <p>project2</p>
+        </div>
+        <div class="project-card odd" @click="project(2)">
+          <p>project3</p>
+        </div>
+        <div class="project-card even" @click="project(3)">
+          <p>project4</p>
+        </div>
+        <div class="project-card odd" @click="project(4)">
+          <p>project5</p>
+        </div>
+        <div class="project-card even" @click="project(5)">
+          <p>project6</p>
+        </div>
+      </div>
 		</div>
 		<div class="part part5" :style="{bottom:4*height/5+'px'}">
 			<div class="part-title" :style="{height:height/5+'px'}">
@@ -119,6 +139,7 @@
 		        </div>
 			</div>
 		</div>
+    <div class="quare"></div>
 	</div>
 </template>
 <script>
@@ -144,6 +165,36 @@ new Rem();
       swiper,swiperSlide
     },
 		methods:{
+      project:function (index) {
+        var pos = document.getElementsByClassName('project-card')[index].getBoundingClientRect();
+        var div = document.createElement('div');
+        $('.scroll').append(div);
+        $(div).css({
+          'position':'absolute',
+          'top':pos.top+'px',
+          'left':'0px',
+          'width':'100%',
+          'height':pos.height+'px',
+          'background':'red',
+          'z-index':'99999',
+          'transform-origin':'50% 50%'
+        })
+        setTimeout(function () {
+          $(div).css({
+            'position':'absolute',
+            'transition':'all 3s',
+            'top':'0px',
+            'left':'0px',
+            'width':'100%',
+            'height':'100%',
+            'background':'red',
+            'transition':'all 0.5s'
+          })
+        },20)
+
+
+
+      },
 			reBack:function(){
 				for(let i =0;i<$('.mhome').find('.part').length;i++){
 		            $('.mhome').find('.part').eq(i).css({
@@ -343,5 +394,29 @@ new Rem();
 .swiper-slide h3{
   margin-top: 10px;
   text-align: center;
+}
+.project-card{
+  width: 100%;
+  height: 20%;
+  position: relative;
+  top: 0;
+  transition: all 0.3s;
+}
+.odd{
+  background: #f7f7f7;
+  z-index: 1;
+}
+.even{
+  background: #fff;
+  box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.1);
+  z-index: 2;
+}
+.nopadding{
+  padding: 0;
+}
+.scroll {
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding-bottom: 10px;
 }
 </style>
