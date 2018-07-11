@@ -18,11 +18,50 @@
 			</div>
 			<div class="content" :style="{'bottom':height/5+'px'}">
 
-				<p class="center"><span class="a-s"><img class="avator" src="../../assets/IMG_0606.jpg" alt=""></span></p>
-				<p class="center name">sichao.yuan（袁斯超）</p>
-				<p class="center">火锅、代码、游戏、旅游</p>
-				<p class="center ">重庆大学</p>
-				<p class="center ">计算机科学与技术</p>
+        <swiper :options="swiperOption" ref="mySwiper">
+          <swiper-slide>
+            <p class="center"><span class="a-s"><img class="avator" src="../../assets/IMG_0606.jpg" alt=""></span></p>
+            <p class="center name">sichao.yuan（袁斯超）</p>
+            <p class="center">火锅、代码、游戏、旅游</p>
+            <p class="center ">重庆大学</p>
+            <p class="center ">计算机科学与技术</p>
+          </swiper-slide>
+          <swiper-slide>
+            <h3>基本情况</h3>
+            <p class="center">2017年7月毕业于重庆大学。来到上海从事前端的工作，目前工作一年。熟悉页面开发html、css、JavaScript等前端基础。喜欢开源，自己也朝着这方向努力，熟悉vue，有过基于vue的产品开发经验。<b>热爱前端</b>，喜欢去倒弄一些小东西，经常更新github。</p>
+            <h3>工作职责</h3>
+            <p class="center">参与项目用vue重构</p>
+            <p class="center">商城开发和维护</p>
+            <p class="center">内部系统（移动OA，JQuery+HTML）</p>
+            <p class="center">微信小程序（斐讯销售管理系统）</p>
+            <p class="center">其他一些项目的维护（优化和bug修复）和开发任务</p>
+          </swiper-slide>
+          <swiper-slide>
+            <h3>GitHub</h3>
+            <p class="center">分享一些自己的小作品以及学习他人的优秀代码和开源项目</p>
+            <h3>Dash</h3>
+            <p class="center">一款MAC平台上的文档工具（文档官方、丰富）</p>
+            <h3>Segmentfault</h3>
+            <p class="center">搜索解决一些疑问 探索新奇</p>
+            <h3>掘金</h3>
+            <p class="center">搜索解决一些疑问 探索新奇</p>
+            <h3>等待我去探索更多...</h3>
+          </swiper-slide>
+          <swiper-slide>
+            <h3>运动</h3>
+            <p class="center">5km跑、羽毛球...</p>
+            <h3>音乐电影</h3>
+            <p class="center">周杰伦、王力宏、各类喜剧电影</p>
+            <h3>游戏</h3>
+            <p class="center">英雄联盟、地下城与勇士、各类优质单机独立游戏、模拟类游戏</p>
+            <h3>烹饪</h3>
+            <p class="center">做菜算吗？😂，家常小菜还是hold住的</p>
+          </swiper-slide>
+          <div class="swiper-pagination" slot="pagination"></div>
+        </swiper>
+
+
+
 			</div>
 		</div>
 		<div class="part part3" :style="{bottom:2*height/5+'px'}">
@@ -33,23 +72,23 @@
 			<div class="content" :style="{'bottom':height/5+'px'}">
 				<div class="skill">
 		          <i class="icon icon-skill">&#xe622;</i>
-		          <div class="line" style="width: 55%"><span>HTML</span><div class="animate-line"></div></div>
+		          <div class="line" style="width: 70%"><span>HTML</span><div class="animate-line"></div><p>70%</p></div>
 		        </div>
 		        <div class="skill">
 		          <i class="icon icon-skill">&#xe6b7;</i>
-		          <div class="line" style="width: 55%"><span>CSS</span><div class="animate-line"></div></div>
+		          <div class="line" style="width: 70%"><span>CSS</span><div class="animate-line"></div><p>70%</p></div>
 		        </div>
 		        <div class="skill">
 		          <i class="icon icon-skill">&#xe640;</i>
-		          <div class="line" style="width: 65%"><span>VueJS</span><div class="animate-line"></div></div>
+		          <div class="line" style="width: 65%"><span>VueJS</span><div class="animate-line"></div><p>65%</p></div>
 		        </div>
 		        <div class="skill">
 		          <i class="icon icon-skill">&#xe639;</i>
-		          <div class="line" style="width: 45%"><span>JavaScript</span><div class="animate-line"></div></div>
+		          <div class="line" style="width: 50%"><span>JavaScript</span><div class="animate-line"></div><p>50%</p></div>
 		        </div>
 		        <div class="skill">
 		          <i class="icon icon-skill">&#xe655;</i>
-		          <div class="line" style="width: 45%"><span>JQuery</span><div class="animate-line"></div></div>
+		          <div class="line" style="width: 50%"><span>JQuery</span><div class="animate-line"></div><p>50%</p></div>
 		        </div>
 			</div>
 		</div>
@@ -84,14 +123,26 @@
 </template>
 <script>
 import Rem from '@/util/Rem';
+import {swiper,swiperSlide} from 'vue-awesome-swiper';
+import 'swiper/dist/css/swiper.css'
 new Rem();
 	export default{
 		data:function() {
 			return {
 				height:document.body.clientHeight,
 				currIndex:9999,
+        swiperOption:{
+          pagination:{
+            el:'.swiper-pagination',
+            clickable:true,
+            bulletActiveClass: 'white-bullet-active',
+          },
+        }
 			}
 		},
+    components:{
+      swiper,swiperSlide
+    },
 		methods:{
 			reBack:function(){
 				for(let i =0;i<$('.mhome').find('.part').length;i++){
@@ -279,5 +330,18 @@ new Rem();
 .o-item span{
     vertical-align: top;
     margin-left: 0.27rem;
+}
+.line p{
+  font-size: 0.37rem;
+  margin-top: 5px;
+  font-weight: bold;
+}
+.swiper-container{
+  height: 100%;
+  width: 100%;
+}
+.swiper-slide h3{
+  margin-top: 10px;
+  text-align: center;
 }
 </style>

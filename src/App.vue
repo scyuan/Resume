@@ -96,4 +96,7 @@ body,#app{
   height: 0;
   visibility: hidden;
 }
+.white-bullet-active{
+  opacity: 1 !important;
+}
 </style>

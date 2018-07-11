@@ -113,11 +113,11 @@
       <div class="content1">
         <div class="skill">
           <i class="icon icon-skill">&#xe622;</i>
-          <div class="line" style="width: 75%"><span>HTML 75%</span><div class="animate-line"></div></div>
+          <div class="line" style="width: 70%"><span>HTML 70%</span><div class="animate-line"></div></div>
         </div>
         <div class="skill">
           <i class="icon icon-skill">&#xe6b7;</i>
-          <div class="line" style="width: 75%"><span>CSS 75%</span><div class="animate-line"></div></div>
+          <div class="line" style="width: 70%"><span>CSS 70%</span><div class="animate-line"></div></div>
 
         </div>
         <div class="skill">
@@ -126,11 +126,11 @@
         </div>
         <div class="skill">
           <i class="icon icon-skill">&#xe639;</i>
-          <div class="line" style="width: 45%"><span>JavaScript 45%</span><div class="animate-line"></div></div>
+          <div class="line" style="width: 50%"><span>JavaScript 45%</span><div class="animate-line"></div></div>
         </div>
         <div class="skill">
           <i class="icon icon-skill">&#xe655;</i>
-          <div class="line" style="width: 45%"><span>JQuery 45%</span><div class="animate-line"></div></div>
+          <div class="line" style="width: 50%"><span>JQuery 45%</span><div class="animate-line"></div></div>
         </div>
       </div>
       <i class="icon icon-back" @click.stop='back(2)'>&#xe62c;</i>
