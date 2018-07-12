@@ -23,15 +23,24 @@
             <p class="center"><span class="a-s"><img class="avator" src="../../assets/IMG_0606.jpg" alt=""></span></p>
             <p class="center name">sichao.yuan（袁斯超）</p>
             <p class="center">火锅、代码、游戏、旅游</p>
+            <p class="center">18321845414/sichao.yuan@foxmail.com</p>
             <p class="center ">重庆大学</p>
-            <p class="center ">计算机科学与技术</p>
+            <p class="center ">计算机科学与技术/全日制本科</p>
           </swiper-slide>
           <swiper-slide>
             <h3>基本情况</h3>
-            <p class="center">2017年7月毕业于重庆大学。来到上海从事前端的工作，目前工作一年。熟悉页面开发html、css、JavaScript等前端基础。喜欢开源，自己也朝着这方向努力，熟悉vue，有过基于vue的产品开发经验。<b>热爱前端</b>，喜欢去倒弄一些小东西，经常更新github。</p>
+            <p class="center">2017年7月毕业于重庆大学。来到上海从事前端的工作，目前工作一年。</p>
+            <ul class="aboutme">
+              <li>能够语义化的编写文档；</li>
+              <li>熟悉CSS，了解外边距折叠等特性；</li>
+              <li>了解ES5/ES6，对原型、闭包、继承等有自己的理解；</li>
+              <li>熟悉Vue，有过基于Vue的产品开发经验；</li>
+              <li><b>热爱前端</b>，喜欢去倒弄一些小东西，经常更新GitHub；</li>
+              <li>喜欢开源，自己也朝着这方向努力；</li>
+            </ul>
             <h3>工作职责</h3>
-            <p class="center">参与项目用vue重构</p>
-            <p class="center">商城开发和维护</p>
+            <p class="center">参与项目用Vue重构</p>
+            <p class="center">商城移动端开发和维护（Vue）</p>
             <p class="center">内部系统（移动OA，JQuery+HTML）</p>
             <p class="center">微信小程序（斐讯销售管理系统）</p>
             <p class="center">其他一些项目的维护（优化和bug修复）和开发任务</p>
@@ -101,50 +110,117 @@
         <div class="project-card odd" @click="project(0)">
           <p class="project-name" :style="">斐讯商城(H5)</p>
           <div class="project-content">
-            <p>基于Vue开发。斐讯官方商城H5版适用于微信端、浏览器、APP端。主要满足用户对斐讯产品的购买。</p>
+            <h3>项目介绍</h3>
+            <p>本项目是一个移动端项目，基于Vue框架开发。斐讯官方商城H5版适用于微信端、浏览器、APP端。</p>
+            <h3>岗位职责</h3>
+            <p>主要负责详情、优购码、广告导流等页面的布局和数据渲染，完成与后端的接口对接，配合后端的对接联调，解决不同手机端页面布局错乱的问题。</p>
+            <h3>技术要求</h3>
+            <p>前端通过Vue和php模版引擎(部分)构建页面；</p>
+            <p>通过flexible实现移动端适配；</p>
+            <p>通过axios实现http请求；</p>
+            <h3>遇到的一些问题</h3>
+            <p>详情页加载缓慢：优化图片资源大小；较少http请求次数</p>
+            <p>客服接口无法唤起：由于网络问题，客服接口需要等待，导致客服窗口无法唤起。将客服窗口唤起动作移动到客服接口初始化的回调里面</p>
+            <p>Swiper轮播图无法轮播：由于使用了keep-alive导致swiper组件无法进行轮播动作。</p>
             <span @click.stop="go('https://www.phimall.com/m/')">demo</span>
-            <span @click.stop="closeProject(0)">返回</span>
+            <span class="mb60" @click.stop="closeProject(0)">返回</span>
           </div>
         </div>
         <div class="project-card even" @click="project(1)">
           <p class="project-name">积分商城(H5)</p>
           <div class="project-content">
-            <p>基于Vue开发。积分商城也是适用于微信端、浏览器、APP端。主要功能为首页活动、商品详情、购买（纯积分+积分加价购）、积分管理。</p>
+            <h3>项目介绍</h3>
+            <p>本项目是一个移动端项目，基于Vue开发。积分商城也是适用于微信端、浏览器、APP端。主要功能为首页活动、商品详情、购买（纯积分+积分加价购）、积分管理。</p>
+            <h3>岗位职责</h3>
+            <p>负责我的积分、兑换记录、下单管理等页面的布局和数据渲染，完成与后端的接口对接，配合后端的对接联调以及后期的UI调整，解决不同手机端页面布局错乱的问题。</p>
+            <h3>技术要求</h3>
+            <p>前端通过Vue和php模版引擎(部分)构建页面；</p>
+            <p>通过flexible实现移动端适配；</p>
+            <p>通过axios实现http请求；</p>
+            <p>使用Swiper实现首页banner的轮播切换，better-scroll实现上拉加载，下拉刷新；</p>
+            <p>合理使用钩子函数，实现数据的监听、渲染页面、页面节点的实例化功能；</p>
+            <h3>遇到的一些问题</h3>
+            <p>new Date()兼容性问题</p>
+            <p>flex实现多行居中问题</p>
+            <p>position:fixed失效问题</p>
+            <p>结合better-scroll实现分页，上拉加载，下拉刷新的UI问题</p>
+            <p>页面{{}}符号闪屏</p>
             <span @click.stop="go('https://www.phimall.com/m/integralstatic-integralHome.html')">demo</span>
-            <span @click.stop="closeProject(1)">返回</span>
+            <span class="mb60" @click.stop="closeProject(1)">返回</span>
           </div>
 
         </div>
-        <div class="project-card odd" @click="project(2)">
-          <p class="project-name">微信办公-移动OA(H5)</p>
-          <div class="project-content">
-            <p>方便销售员销售公司产品，主要满足销售员扫码销售以及对产品销售的统计功能。</p>
 
-            <span @click.stop="closeProject(2)">返回</span>
+        <div class="project-card odd" @click="project(2)">
+          <p class="project-name">微信小程序(销售)</p>
+          <div class="project-content">
+            <h3>项目介绍</h3>
+            <p>方便销售员销售公司产品，主要满足销售员扫码销售以及对产品销售的统计功能。</p>
+            <h3>岗位职责</h3>
+            <p>负责所有页面的布局和数据渲染，完成与后端的接口对接</p>
+            <span class="mb60" @click.stop="closeProject(2)">返回</span>
           </div>
         </div>
         <div class="project-card even" @click="project(3)">
-          <p class="project-name">微信小程序(销售)</p>
+          <p class="project-name">Vue仿网易云音乐</p>
           <div class="project-content">
-            <p>基于Vue开发。积分商城也是适用于微信端、浏览器、APP端。主要功能为首页活动、商品详情、购买（纯积分+积分加价购）、积分管理。</p>
-
-            <span @click.stop="closeProject(3)">返回</span>
+            <h3>项目介绍</h3>
+            <p>个人项目，热爱音乐，所以想用Vue写个WebApp，只适配移动端。音乐API为GitHub上开源项目。实现首页功能包括歌单推荐和歌曲推荐、歌单详情、歌曲播放、歌曲歌词播放和进度条、MV等功能</p>
+            <h3>技术要求</h3>
+            <p>使用Vue框架，以及Vue全家桶构建单页面应用；</p>
+            <p>采用手机淘宝适配方案；</p>
+            <p>使用阿里icon-font矢量图标库；</p>
+            <p>使用Swiper实现首页banner的轮播切换，better-scroll是移动端滚动体验更好；</p>
+            <p>合理使用钩子函数，实现数据的监听、渲染页面、页面节点的实例化功能；</p>
+            <h3>遇到的一些问题</h3>
+            <p>打包后本地资源报404错误</p>
+            <p>beforeEach的无限循环问题</p>
+            <p>毛玻璃效果以及四周泛白</p>
+            <p>弹出层禁止底部滑动</p>
+            <p>首页图片加载过渡（优化体验）以及歌曲播放页的图片加载（加载图片缓慢）</p>
+            <p>实现同步歌词</p>
+            <span @click.stop="go('http://www.yuansichao.xin/vue-music/dist/#/')">demo</span>
+            <span class="mb60" @click.stop="closeProject(4)">返回</span>
           </div>
         </div>
         <div class="project-card odd" @click="project(4)">
-          <p class="project-name">Vue仿网易云音乐</p>
+          <p class="project-name">Vue仿小米商城</p>
           <div class="project-content">
-            <p>人项目，热爱音乐，所以想用Vue写个WebApp，只适配移动端。实现首页功能包括歌单推荐和歌曲推荐、歌单详情、歌曲播放、歌曲歌词播放和进度条、MV等功能</p>
-            <span @click.stop="go('http://www.yuansichao.xin/vue-music/dist/#/')">demo</span>
-            <span @click.stop="closeProject(4)">返回</span>
+            <h3>项目介绍</h3>
+            <p>整体布局仿照小米移动商城，通过rem+px实现移动端的适配，基于vue全家桶（vue+vuex+vue-router）完成首页、购物车、分类、产品详情等功能。</p>
+            <h3>技术要求</h3>
+            <p>使用Vue框架，以及Vue全家桶构建单页面应用；</p>
+            <p>采用手机淘宝适配方案；</p>
+            <p>使用阿里icon-font矢量图标库；</p>
+            <p>vue-lazy实现图片懒加载；</p>
+            <p>使用Swiper实现首页banner的轮播切换，better-scroll实现分类栏功能</p>
+            <p>合理使用钩子函数，实现数据的监听、渲染页面、页面节点的实例化功能；</p>
+            <h3>遇到的一些问题</h3>
+            <p>vue-router切换时两个页面位置错乱</p>
+            <p>实现购物车添加动画</p>
+            <p>组件设置了keep-alive之后，组件内的子组件如果有transition动画，在第二次切入时，没有过渡效果</p>
+            <p>Swiper组件内的图片使用vue-lazyload图片不显示</p>
+            <p>移动端点击闪屏：在html和body内添加-webkit-tap-highlight-color: rgba(0,0,0,0);</p>
+            <p>animation动画在打包后的正式环境中没有动画效果：将将keyframes写到最后，（css的顺序的不同可能会有意想不到的的结果）</p>
+            <span @click.stop="go('http://www.yuansichao.xin/dist/#/')">demo</span>
+            <span class="mb60" @click.stop="closeProject(4)">返回</span>
           </div>
         </div>
         <div class="project-card even" @click="project(5)">
-          <p class="project-name">Vue仿小米商城</p>
+          <p class="project-name">微信办公-移动OA(H5)</p>
           <div class="project-content">
-            <p>整体布局仿照小米移动商城，通过rem+px实现移动端的适配，基于vue全家桶（vue+vuex+vue-router）完成首页、购物车、分类、产品详情等功能。</p>
-            <span @click.stop="go('http://www.yuansichao.xin/dist/#/')">demo</span>
-            <span @click.stop="closeProject(5)">返回</span>
+            <h3>项目介绍</h3>
+            <p>该项目是一个微信端的H5项目，将公司的OA办公系统移植到移动端、主要用于内部员工查看和管理自己的办公流程。主要通过rem+px实现移动端的适配。</p>
+            <h3>岗位职责</h3>
+            <p>负责部分页面的布局（基本上都是表格）</p>
+            <span class="mb60" @click.stop="closeProject(5)">返回</span>
+          </div>
+        </div>
+        <div class="project-card odd" @click="project(7)">
+          <p class="project-name">canvas时钟、象棋、象棋对战、贪吃蛇</p>
+          <div class="project-content">
+            <span @click.stop="go('https://github.com/scyuan/MyJavaScriptPractice')">GitHub</span>
+            <span @click.stop="closeProject(7)">返回</span>
           </div>
         </div>
         <div class="project-box" @touchmove.prevent @scroll.prevent>
@@ -218,15 +294,23 @@ new Rem();
         //   })
         //   $('p').remove('.remove');
         // },500)
-
-        $('.project-card').eq(index).css({
-          'height':'100px',
+        $('.project-card').eq(index).animate({
+          scrollTop:'-1000px'
+        },1,function () {
+          $('.project-card').eq(index).css({
+            'height':'100px',
+            'overflow-x': '',
+            'overflow-y': '',
+          })
         })
+
       },
       project:function (index) {
 
         $('.project-card').eq(index).css({
-          'height':'100%'
+          'height':'100%',
+          'overflow-x': 'hidden',
+          'overflow-y': 'scroll',
         })
         $('.scroll').animate({
           scrollTop:document.getElementsByClassName('project-card')[index].offsetTop
@@ -466,7 +550,7 @@ new Rem();
     box-sizing: border-box;
     overflow: hidden;
     transition: all 0.3s;
-    padding-top: 100px;
+    padding-top:100px;
   }
   .odd{
     background: #f7f7f7;
@@ -486,8 +570,6 @@ new Rem();
   }
   .project-box{
     position: absolute;
-    overflow-x: hidden;
-    overflow-y: auto;
     left:0px;
     height: 100px;
     opacity: 0;
@@ -526,5 +608,14 @@ new Rem();
     margin: 0 auto;
     font-size: 16px;
     margin-top: 10px;
+  }
+  .aboutme li{
+    list-style: none;
+  }
+  .project-content h3{
+    margin-top: 10px;
+  }
+  .project-content span.mb60{
+    margin-bottom: 60px;
   }
 </style>
