@@ -304,230 +304,227 @@ new Rem();
 	}
 </script>
 <style scoped>
-.mhome{
-	width: 100%;
-	height: 100%;
-	position: relative;
-	overflow: hidden;
-}
-.part{
-	position: absolute;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	border-bottom: 2px solid #000;
-	background: #fff;
-}
-.part1{
-	z-index: 1;
-	transition: all 0.5s;
-}
-.part2{
-	z-index: 2;
-	transition: all 0.45s;
-}
-.part3{
-	z-index: 3;
-	transition: all 0.4s;
-}
-.part4{
-	z-index: 4;
-	transition: all 0.35s;
-}
-.part5{
-	z-index: 5;
-	transition: all 0.3s;
-}
-.part-title{
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	transition: all 0.3s;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-size: 0.59rem;
-	font-weight: bold;
-}
-.part-title-1{
-	height: 1rem !important;
-}
-.icon-go-top{
-	font-size: 0.32rem;
-	float: left;
-	position: absolute;
-	left: 0.4rem;
-}
-.content{
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 0;
-	padding: 0.4rem;
-	font-size: 0.37rem;
-}
-.center{
-	text-align: center;
-	margin: 10px 0;
-}
-.a-s{
-	display: inline-block;
-	width: 2.13rem;
-	height: 2.13rem;
-	border-radius: 1.07rem;
-	overflow: hidden;
-}
-.avator{
-	width: 100%;
-	height: auto;
-}
-.name{
-	font-size: 0.4rem;
-	font-weight: bold;
-}
-.skill{
-  height: 20%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  padding-left: 0.4rem;
-}
-.icon-skill{
-  color: #000;
-  font-size: 0.7rem;
-}
-.line{
-  height: 0.53rem;
-  background: linear-gradient(to right,rgba(0,0,0,0.1),rgba(0,0,0,0.6));
-  margin-left: 0.53rem;
-  position: relative;
-}
-.line>span{
-  line-height: 0.53rem;
-  color: #fff;
-  font-size: 0.6rem;
-  font-weight: bolder;
-}
-.animate-line{
-  position: absolute;
-  height: 100%;
-  background: linear-gradient(to right,rgba(0,0,0,0.1),rgba(0,0,0,0.6));
-  animation: grow 2s infinite;
-  top: 0;
-  left: 0;
-}
-@keyframes grow {
-  from{
-    width: 0;
-  }
-  to{
+  .mhome{
     width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
   }
-}
-.o-item{
-	display: inline-block;
-	width: 60%;
-	height: 1.33rem;
-	background: #333;
-	border-radius: 0.13rem;
-	margin-top: 0.8rem;
-	background-clip: padding-box;
-	text-align: center;
-	line-height: 1.33rem;
-	cursor: pointer;
-	color: #fff;
-}
-.o-item .icon{
+  .part{
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-bottom: 2px solid #000;
+    background: #fff;
+  }
+  .part1{
+    z-index: 1;
+    transition: all 0.5s;
+  }
+  .part2{
+    z-index: 2;
+    transition: all 0.45s;
+  }
+  .part3{
+    z-index: 3;
+    transition: all 0.4s;
+  }
+  .part4{
+    z-index: 4;
+    transition: all 0.35s;
+  }
+  .part5{
+    z-index: 5;
+    transition: all 0.3s;
+  }
+  .part-title{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.59rem;
+    font-weight: bold;
+  }
+  .part-title-1{
+    height: 1rem !important;
+  }
+  .icon-go-top{
+    font-size: 0.32rem;
+    float: left;
+    position: absolute;
+    left: 0.4rem;
+  }
+  .content{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 0.4rem;
+    font-size: 0.37rem;
+  }
+  .center{
+    text-align: center;
+    margin: 10px 0;
+  }
+  .a-s{
+    display: inline-block;
+    width: 2.13rem;
+    height: 2.13rem;
+    border-radius: 1.07rem;
+    overflow: hidden;
+  }
+  .avator{
+    width: 100%;
+    height: auto;
+  }
+  .name{
+    font-size: 0.4rem;
+    font-weight: bold;
+  }
+  .skill{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 0.4rem;
+  }
+  .icon-skill{
+    color: #000;
+    font-size: 0.7rem;
+  }
+  .line{
+    height: 0.53rem;
+    background: linear-gradient(to right,rgba(0,0,0,0.1),rgba(0,0,0,0.6));
+    margin-left: 0.53rem;
+    position: relative;
+  }
+  .line>span{
+    line-height: 0.53rem;
+    color: #fff;
+    font-size: 0.6rem;
+    font-weight: bolder;
+  }
+  .animate-line{
+    position: absolute;
+    height: 100%;
+    background: linear-gradient(to right,rgba(0,0,0,0.1),rgba(0,0,0,0.6));
+    animation: grow 2s infinite;
+    top: 0;
+    left: 0;
+  }
+  @keyframes grow {
+    from{
+      width: 0;
+    }
+    to{
+      width: 100%;
+    }
+  }
+  .o-item{
+    display: inline-block;
+    width: 60%;
+    height: 1.33rem;
+    background: #333;
+    border-radius: 0.13rem;
+    margin-top: 0.8rem;
+    background-clip: padding-box;
+    text-align: center;
+    line-height: 1.33rem;
+    cursor: pointer;
+    color: #fff;
+  }
+  .o-item .icon{
     font-size: 0.69rem;
-}
-.o-item span{
+  }
+  .o-item span{
     vertical-align: top;
     margin-left: 0.27rem;
-}
-.line p{
-  font-size: 0.37rem;
-  margin-top: 5px;
-  font-weight: bold;
-}
-.swiper-container{
-  height: 100%;
-  width: 100%;
-}
-.swiper-slide h3{
-  margin-top: 10px;
-  text-align: center;
-}
-.project-card{
-  width: 100%;
-  height: 100px;
-  position: relative;
-  top: 0;
-  box-sizing: border-box;
-  overflow: hidden;
-  transition: all 0.3s;
-  padding-top: 100px;
-}
-.odd{
-  background: #f7f7f7;
-  z-index: 1;
-}
-.even{
-  background: #fff;
-  box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.1);
-  z-index: 2;
-}
-.nopadding{
-  padding: 0;
-}
-.scroll {
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-.project-box{
-  position: absolute;
-  overflow-x: hidden;
-  overflow-y: auto;
-  left:0px;
-  height: 100px;
-  opacity: 0;
-  width:100%;
-  z-index: 9999;
-}
-.project-name{
-  text-align: center;
-  font-size: 16px;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
+  }
+  .line p{
+    font-size: 0.37rem;
+    margin-top: 5px;
+    font-weight: bold;
+  }
+  .swiper-container{
+    height: 100%;
+    width: 100%;
+  }
+  .swiper-slide h3{
+    margin-top: 10px;
+    text-align: center;
+  }
+  .project-card{
+    width: 100%;
+    height: 100px;
+    position: relative;
+    top: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: all 0.3s;
+    padding-top: 100px;
+  }
+  .odd{
+    background: #f7f7f7;
+    z-index: 1;
+  }
+  .even{
+    background: #fff;
+    box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.1);
+    z-index: 2;
+  }
+  .nopadding{
+    padding: 0;
+  }
+  .scroll {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  .project-box{
+    position: absolute;
+    overflow-x: hidden;
+    overflow-y: auto;
+    left:0px;
+    height: 100px;
+    opacity: 0;
+    width:100%;
+    z-index: 9999;
+  }
+  .project-name{
+    text-align: center;
+    font-size: 16px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
 
-  height: 100px;
-  line-height: 100px;
-}
-.icon-quit-project{
-  position: absolute;
-  left: 10px;
-  bottom: 15px;
-  font-size: 26px;
-  font-weight: bolder;
-}
-.project-content{
-  padding: 0 30px;
-}
-.project-content span{
-  display: block;
-  width: 120px;
-  height: 30px;
-  border-radius: 16px;
-  border: 1px solid #000;
-  text-align: center;
-  line-height:30px;
-  margin: 0 auto;
-  font-size: 16px;
-  margin-top: 10px;
-}
-.height100{
-  height: 100%;
-}
+    height: 100px;
+    line-height: 100px;
+  }
+  .icon-quit-project{
+    position: absolute;
+    left: 10px;
+    bottom: 15px;
+    font-size: 26px;
+    font-weight: bolder;
+  }
+  .project-content{
+    padding: 0 30px;
+  }
+  .project-content span {
+    display: block;
+    width: 120px;
+    height: 30px;
+    border-radius: 16px;
+    border: 1px solid #000;
+    text-align: center;
+    line-height: 30px;
+    margin: 0 auto;
+    font-size: 16px;
+    margin-top: 10px;
+  }
 </style>
