@@ -52,7 +52,15 @@
               <p>介绍一些个人基本情况</p>
               <div class="card-info-wenzi">
                 <h3>基本情况</h3>
-                <p>2017年7月毕业于重庆大学。来到上海从事前端的工作，目前工作一年。熟悉页面开发html、css、JavaScript等前端基础。喜欢开源，自己也朝着这方向努力，熟悉vue，有过基于vue的产品开发经验。<b>热爱前端</b>，喜欢去倒弄一些小东西，经常更新github。</p>
+                <p>2017年7月毕业于重庆大学。来到上海从事前端的工作，目前工作一年。</p>
+                <ul class="aboutme">
+                  <li>能够语义化的编写文档；</li>
+                  <li>熟悉CSS，了解外边距折叠等特性；</li>
+                  <li>了解ES5/ES6，对原型、闭包、继承等有自己的理解；</li>
+                  <li>熟悉Vue，了解Vue组件的生命周期，有过基于Vue的产品开发经验；</li>
+                  <li><b>热爱前端</b>，喜欢去倒弄一些小东西，经常更新GitHub；</li>
+                  <li>喜欢开源，自己也朝着这方向努力；</li>
+                </ul>
                 <h3>工作职责</h3>
                 <p>参与项目用vue重构</p>
                 <p>商城开发和维护</p>
@@ -239,7 +247,12 @@
         <div class="o-item" @click="go('mailto:644397334@qq.com')">
           <i class="icon">&#xe605;</i><span>QQ邮箱</span>
         </div>
-
+        <div class="o-item">
+          <i class="icon">&#xe64c;</i><span>644397334</span>
+        </div>
+        <div class="o-item">
+          <i class="icon">&#xe60a;</i><span>18321845414</span>
+        </div>
       </div>
       <i class="icon icon-back" @click.stop='back(4)'>&#xe62c;</i>
     </div>
@@ -796,4 +809,8 @@ import CanvasTime from '@/util/CanvasTime';
   bottom: 33.33%;
   text-align: center;
 }
+.aboutme{
+  font-size: 16px;
+}
+
 </style>

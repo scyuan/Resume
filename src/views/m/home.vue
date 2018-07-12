@@ -34,7 +34,7 @@
               <li>能够语义化的编写文档；</li>
               <li>熟悉CSS，了解外边距折叠等特性；</li>
               <li>了解ES5/ES6，对原型、闭包、继承等有自己的理解；</li>
-              <li>熟悉Vue，有过基于Vue的产品开发经验；</li>
+              <li>熟悉Vue，了解Vue组件的生命周期，有过基于Vue的产品开发经验；</li>
               <li><b>热爱前端</b>，喜欢去倒弄一些小东西，经常更新GitHub；</li>
               <li>喜欢开源，自己也朝着这方向努力；</li>
             </ul>
@@ -180,7 +180,7 @@
             <p>首页图片加载过渡（优化体验）以及歌曲播放页的图片加载（加载图片缓慢）</p>
             <p>实现同步歌词</p>
             <span @click.stop="go('http://www.yuansichao.xin/vue-music/dist/#/')">demo</span>
-            <span class="mb60" @click.stop="closeProject(4)">返回</span>
+            <span class="mb60" @click.stop="closeProject(3)">返回</span>
           </div>
         </div>
         <div class="project-card odd" @click="project(4)">
@@ -216,11 +216,11 @@
             <span class="mb60" @click.stop="closeProject(5)">返回</span>
           </div>
         </div>
-        <div class="project-card odd" @click="project(7)">
+        <div class="project-card odd" @click="project(6)">
           <p class="project-name">canvas时钟、象棋、象棋对战、贪吃蛇</p>
           <div class="project-content">
             <span @click.stop="go('https://github.com/scyuan/MyJavaScriptPractice')">GitHub</span>
-            <span @click.stop="closeProject(7)">返回</span>
+            <span @click.stop="closeProject(6)">返回</span>
           </div>
         </div>
         <div class="project-box" @touchmove.prevent @scroll.prevent>
@@ -236,7 +236,7 @@
 			<div class="content center" :style="{'bottom':height/5+'px'}">
 				<!-- github  email  blog  weibo-->
 		        <div class="o-item" @click="go('https://github.com/scyuan')">
-		          <i class="icon">&#xeaf6;</i><span>github</span>
+		          <i class="icon">&#xeaf6;</i><span>GitHub</span>
 		        </div>
 		        <div class="o-item" @click="go('http://www.yuansichao.com')">
 		          <i class="icon">&#xe604;</i><span>一枚程序员</span>
@@ -247,6 +247,12 @@
 		        <div class="o-item" @click="go('mailto:644397334@qq.com')">
 		          <i class="icon">&#xe605;</i><span>QQ邮箱</span>
 		        </div>
+            <div class="o-item">
+              <i class="icon">&#xe64c;</i><span>644397334</span>
+            </div>
+            <div class="o-item">
+              <i class="icon">&#xe60a;</i><span>18321845414</span>
+            </div>
 			</div>
 		</div>
     <div class="quare"></div>
