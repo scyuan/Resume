@@ -99,22 +99,56 @@
 			</div>
       <div class="content nopadding scroll" :style="{'bottom':height/5+'px'}">
         <div class="project-card odd" @click="project(0)">
-          <p>project1</p>
+          <p class="project-name" :style="">斐讯商城(H5)</p>
+          <div class="project-content">
+            <p>基于Vue开发。斐讯官方商城H5版适用于微信端、浏览器、APP端。主要满足用户对斐讯产品的购买。</p>
+            <span @click.stop="go('https://www.phimall.com/m/')">demo</span>
+            <span @click.stop="closeProject(0)">返回</span>
+          </div>
         </div>
         <div class="project-card even" @click="project(1)">
-          <p>project2</p>
+          <p class="project-name">积分商城(H5)</p>
+          <div class="project-content">
+            <p>基于Vue开发。积分商城也是适用于微信端、浏览器、APP端。主要功能为首页活动、商品详情、购买（纯积分+积分加价购）、积分管理。</p>
+            <span @click.stop="go('https://www.phimall.com/m/integralstatic-integralHome.html')">demo</span>
+            <span @click.stop="closeProject(1)">返回</span>
+          </div>
+
         </div>
         <div class="project-card odd" @click="project(2)">
-          <p>project3</p>
+          <p class="project-name">微信办公-移动OA(H5)</p>
+          <div class="project-content">
+            <p>方便销售员销售公司产品，主要满足销售员扫码销售以及对产品销售的统计功能。</p>
+
+            <span @click.stop="closeProject(2)">返回</span>
+          </div>
         </div>
         <div class="project-card even" @click="project(3)">
-          <p>project4</p>
+          <p class="project-name">微信小程序(销售)</p>
+          <div class="project-content">
+            <p>基于Vue开发。积分商城也是适用于微信端、浏览器、APP端。主要功能为首页活动、商品详情、购买（纯积分+积分加价购）、积分管理。</p>
+
+            <span @click.stop="closeProject(3)">返回</span>
+          </div>
         </div>
         <div class="project-card odd" @click="project(4)">
-          <p>project5</p>
+          <p class="project-name">Vue仿网易云音乐</p>
+          <div class="project-content">
+            <p>人项目，热爱音乐，所以想用Vue写个WebApp，只适配移动端。实现首页功能包括歌单推荐和歌曲推荐、歌单详情、歌曲播放、歌曲歌词播放和进度条、MV等功能</p>
+            <span @click.stop="go('http://www.yuansichao.xin/vue-music/dist/#/')">demo</span>
+            <span @click.stop="closeProject(4)">返回</span>
+          </div>
         </div>
         <div class="project-card even" @click="project(5)">
-          <p>project6</p>
+          <p class="project-name">Vue仿小米商城</p>
+          <div class="project-content">
+            <p>整体布局仿照小米移动商城，通过rem+px实现移动端的适配，基于vue全家桶（vue+vuex+vue-router）完成首页、购物车、分类、产品详情等功能。</p>
+            <span @click.stop="go('http://www.yuansichao.xin/dist/#/')">demo</span>
+            <span @click.stop="closeProject(5)">返回</span>
+          </div>
+        </div>
+        <div class="project-box" @touchmove.prevent @scroll.prevent>
+          <i class="icon icon-quit-project" @click="closeProject()">&#xe602;</i>
         </div>
       </div>
 		</div>
@@ -152,6 +186,7 @@ new Rem();
 			return {
 				height:document.body.clientHeight,
 				currIndex:9999,
+        index:-1,
         swiperOption:{
           pagination:{
             el:'.swiper-pagination',
@@ -165,32 +200,60 @@ new Rem();
       swiper,swiperSlide
     },
 		methods:{
-      project:function (index) {
-        var pos = document.getElementsByClassName('project-card')[index].getBoundingClientRect();
-        var div = document.createElement('div');
-        $('.scroll').append(div);
-        $(div).css({
-          'position':'absolute',
-          'top':pos.top+'px',
-          'left':'0px',
-          'width':'100%',
-          'height':pos.height+'px',
-          'background':'red',
-          'z-index':'99999',
-          'transform-origin':'50% 50%'
+      closeProject:function (index) {
+        // var pos = document.getElementsByClassName('project-card')[this.index].getBoundingClientRect();
+        //
+        // $('.project-box').css({
+        //   'top':pos.top+'px',
+        //   'height':'100px',
+        //   'transition':'all 0.5s'
+        // })
+        // setTimeout(function () {
+        //   $('.project-box').css({
+        //     'transition':'all 0s',
+        //     'opacity':'0',
+        //   })
+        //   $('.project-box').css({
+        //     'height':'0',
+        //   })
+        //   $('p').remove('.remove');
+        // },500)
+
+        $('.project-card').eq(index).css({
+          'height':'100px',
         })
-        setTimeout(function () {
-          $(div).css({
-            'position':'absolute',
-            'transition':'all 3s',
-            'top':'0px',
-            'left':'0px',
-            'width':'100%',
-            'height':'100%',
-            'background':'red',
-            'transition':'all 0.5s'
-          })
-        },20)
+      },
+      project:function (index) {
+
+        $('.project-card').eq(index).css({
+          'height':'100%'
+        })
+        $('.scroll').animate({
+          scrollTop:document.getElementsByClassName('project-card')[index].offsetTop
+        });
+        // this.index = index;
+        // var pos = document.getElementsByClassName('project-card')[index].getBoundingClientRect();
+        // $('.project-box').css({
+        //   'top':pos.top+'px',
+        //   'opacity':'1',
+        //   'background':$(document.getElementsByClassName('project-card')[index]).css('background-color'),
+        // })
+        //
+        // $('.project-box').append('<p class="remove" style="text-align: center;\n' +
+        //   '  font-size: 16px;\n' +
+        //   '  position: absolute;\n' +
+        //   '  left: 0;\n' +
+        //   '  top: 0;\n' +
+        //   '  width: 100%;\n' +
+        //   '  height: 100px;\n' +
+        //   '  line-height: 100px;">'+$('.project-card').eq(index).find('.project-name').eq(0).text()+'</p>');
+        // setTimeout(function () {
+        //   $('.project-box').css({
+        //     'transition':'all 0.5s',
+        //     'top':'0px',
+        //     'height':'100%',
+        //   })
+        // },20)
 
 
 
@@ -397,10 +460,13 @@ new Rem();
 }
 .project-card{
   width: 100%;
-  height: 20%;
+  height: 100px;
   position: relative;
   top: 0;
+  box-sizing: border-box;
+  overflow: hidden;
   transition: all 0.3s;
+  padding-top: 100px;
 }
 .odd{
   background: #f7f7f7;
@@ -417,6 +483,51 @@ new Rem();
 .scroll {
   overflow-x: hidden;
   overflow-y: auto;
-  padding-bottom: 10px;
+}
+.project-box{
+  position: absolute;
+  overflow-x: hidden;
+  overflow-y: auto;
+  left:0px;
+  height: 100px;
+  opacity: 0;
+  width:100%;
+  z-index: 9999;
+}
+.project-name{
+  text-align: center;
+  font-size: 16px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+
+  height: 100px;
+  line-height: 100px;
+}
+.icon-quit-project{
+  position: absolute;
+  left: 10px;
+  bottom: 15px;
+  font-size: 26px;
+  font-weight: bolder;
+}
+.project-content{
+  padding: 0 30px;
+}
+.project-content span{
+  display: block;
+  width: 120px;
+  height: 30px;
+  border-radius: 16px;
+  border: 1px solid #000;
+  text-align: center;
+  line-height:30px;
+  margin: 0 auto;
+  font-size: 16px;
+  margin-top: 10px;
+}
+.height100{
+  height: 100%;
 }
 </style>
