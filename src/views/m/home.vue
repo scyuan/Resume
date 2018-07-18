@@ -233,7 +233,7 @@
 				<i class="icon icon-go-top" v-show='currIndex == 4' @click='gotop(4)'>&#xe647;</i>
 				<span @click='open(4)'>其他</span>
 			</div>
-			<div class="content center" :style="{'bottom':height/5+'px'}">
+			<div class="content content-center" :style="{'bottom':height/5+'px'}">
 				<!-- github  email  blog  weibo-->
 		        <div class="o-item" @click="go('https://github.com/scyuan')">
 		          <i class="icon">&#xeaf6;</i><span>GitHub</span>
@@ -623,5 +623,9 @@ new Rem();
   }
   .project-content span.mb60{
     margin-bottom: 60px;
+  }
+  .content-center{
+    text-align: center;
+    overflow: auto;
   }
 </style>

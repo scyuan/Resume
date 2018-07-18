@@ -362,7 +362,7 @@ import CanvasTime from '@/util/CanvasTime';
   position: absolute;
   top: 0;
   width: 100%;
-
+  /*-webkit-transform:translateZ(0);*/
 }
 .mengban{
   position: absolute;
