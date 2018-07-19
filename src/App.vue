@@ -2,10 +2,7 @@
   <div id="app">
     <!--y页面加载loading-->
 
-    <div class="attenttion" @touchmove.prevent @scroll.prevent>
-      <p>请访问新地址</p>
-      <span @click='go()'>点击我</span>
-    </div>
+    
 
     <transition name="fade">
       <div class="loading" v-if="loading">
@@ -30,11 +27,6 @@ export default {
   },
   components:{
     PacmanLoader
-  },
-  methods:{
-    go:function(){
-      window.location.href = 'http://www.yuansichao.xin/me/';
-    }
   },
   mounted:function () {
     var _this = this;
