@@ -1,6 +1,12 @@
 <template>
   <div id="app">
     <!--y页面加载loading-->
+
+    <div class="attenttion" @touchmove.prevent @scroll.prevent>
+      <p>请访问新地址</p>
+      <span @click='go()'>点击我</span>
+    </div>
+
     <transition name="fade">
       <div class="loading" v-if="loading">
         <pacman-loader :loading="loading" :color="color" :size="size"></pacman-loader>
@@ -24,6 +30,11 @@ export default {
   },
   components:{
     PacmanLoader
+  },
+  methods:{
+    go:function(){
+      window.location.href = 'http://www.yuansichao.xin/me/';
+    }
   },
   mounted:function () {
     var _this = this;
@@ -99,5 +110,21 @@ body,#app{
 }
 .white-bullet-active{
   opacity: 1 !important;
+}
+.attenttion{
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: #fff;
+  text-align: center;
+  font-size: 20px;
+  padding-top: 30%;
+}
+.attenttion span{
+  color: blue;
+  cursor: pointer;
 }
 </style>

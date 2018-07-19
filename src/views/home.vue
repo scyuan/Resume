@@ -285,7 +285,6 @@ import CanvasTime from '@/util/CanvasTime';
         }
       },
       bindClick:function(e){
-        console.log('点击');
         var _this = this;
         $('.part').off('click',_this.bindHover);
         // console.log($(e.target).index());
@@ -293,21 +292,21 @@ import CanvasTime from '@/util/CanvasTime';
         if(index == 0){
           this.time.start();
         }
-        console.log(index);
+        
         for(let i =0;i<$('#home').find('.part').length;i++){
           if(i == index){
             $('#home').find('.part').eq(i).css({
-              "left":"0px"
+              "transform":"translate("+(-i*_this.part_width)+"px,0)"
             })
           }
           if(i < index){
             $('#home').find('.part').eq(i).css({
-              "left":"-100%"
+              "transform":"translate(-100%,0)"
             })
           }
           if(i > index){
             $('#home').find('.part').eq(i).css({
-              "left":"100%"
+              "transform":"translate(100%,0)"
             })
           }
         }
@@ -317,7 +316,7 @@ import CanvasTime from '@/util/CanvasTime';
         for(let i =0;i<$('#home').find('.part').length;i++){
 
           $('#home').find('.part').eq(i).css({
-            "left":_this.part_width * i + 'px'
+            "transform":"translate(0,0)"
           })
         }
         $('.part').on('click',this,_this.bindClick);

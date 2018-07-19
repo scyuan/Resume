@@ -351,28 +351,27 @@ new Rem();
 			reBack:function(){
 				for(let i =0;i<$('.mhome').find('.part').length;i++){
 		            $('.mhome').find('.part').eq(i).css({
-		              	"bottom": i * this.height/5 + "px"
+		              	"transform":"translate(0,0)"
 		            })
 			    }
 			},
 			open:function(index){
-				console.log(index);
 				this.currIndex = index;
 				$('.part-title').eq(index).addClass('part-title-1');
 				for(let i =0;i<$('.mhome').find('.part').length;i++){
 			          if(i == index){
 			            $('.mhome').find('.part').eq(i).css({
-			              "bottom":"0px"
+			              "transform":"translate(0,"+(i*this.height/5)+"px)"
 			            })
 			          }
 			          if(i < index){
 			            $('.mhome').find('.part').eq(i).css({
-			              "bottom":"-100%"
+			              "transform":"translate(0,100%)"
 			            })
 			          }
 			          if(i > index){
 			            $('.mhome').find('.part').eq(i).css({
-			              "bottom":"100%"
+			              "transform":"translate(0,-100%)"
 			            })
 			          }
 			    }
